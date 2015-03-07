@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+LiveJam - Sign Up
+{% endblock %}
+
+{% block content %}
+
+<h1> Sign-Up! </h1>
+
+{% if error %}
+<div style="color:red">{{ error }}</div>
+{% endif %}
+
+{% if success == True %}
+<div style="color:green"> Succesfully registered </div>
+{% endif %}
+
+<form method="post">
+	<input type="text" name="username" placeholder="Enter Username">
+	<input type="text" name="email" placeholder="Enter e-mail"> 
+	<input type="password" name="password" placeholder="Enter Password">
+	<button>Sign-up</button>
+</form>
+
+
+
+{% endblock %}
