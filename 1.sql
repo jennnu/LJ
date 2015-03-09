@@ -5,6 +5,7 @@ CREATE TABLE `user` (
 	`username` VARCHAR(50),
 	`email` VARCHAR(100),
 	`password` CHAR(60),
+	`youtube_access_token` VARCHAR(255),
 	`last_update` DATETIME DEFAULT NULL,
 	`created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	`status` CHAR(1),

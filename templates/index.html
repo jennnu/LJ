@@ -24,10 +24,19 @@ LiveJam - Search Videos
 			</div>
 		</div>
 		<div class="col-md-4">
+			<p>
+				<a href="https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/youtube&redirect_uri=http%3A%2F%2Flocalhost:8888%2Foauth2callback&response_type=code&client_id=446888909227-htgjn8q42147uv9apsr3dentbe65m0eh.apps.googleusercontent.com&access_type=offline">
+					<button>Authorize Google to Broadcast</button>
+				</a>
+			</p>
 			<p> Your Playlist</p>
 			<div id="playlist"></div>
 		</div>
 	</div>
 </div>
+{% endblock %}
+
+{% block javascripts %}
+<script src="/static/js/main.js"></script>	
 {% endblock %}
 

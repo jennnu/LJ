@@ -1,0 +1,6 @@
+$(function() {
+	$("#broadcast").click(function() {
+		
+	});
+});
+
